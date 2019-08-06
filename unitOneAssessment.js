@@ -5,31 +5,97 @@ let assert = require('assert')
 // Write a function called isOdd that returns whether or not a number is odd.
 // If something that is not a number is passed in, return false.
 
+console.log('---------#1-----------')
 
+const isOdd = (elem) => {
+    if (elem % 2 === 0) {
+      return false
+  }  else if (typeof elem !== 'number') {
+    return false
+  } else {
+    return true
+  }
+  
+  }
+console.log(isOdd())
 // Uncomment out the next line to test your solution
-// runQ1Tests()
+ runQ1Tests()
 
 
 // Question Two:
 
-// Write a function called numberOfDigits that returns how many digits are in a given number
+// Write a function called numberOfDigits that returns how many digits are in a given 
+// number
+
+console.log('--------#2------------')
+
+const numberOfDigits = (num) => {
+return num 
+}
+
+// const numberOfDigits = (num) => {
+  
+// }
+
 
 // Uncomment out the next line to test your solution
-// runQ2Tests()
+ runQ2Tests()
 
 // Question Three:
 
 // Write a function called disemvowel that removes all of the vowels from a string.
 // Treat y as a consonant, not a vowel
 
+// console.log('--------#3---------')
+
+const disemvowel = (str, elem) => {
+  for (let i = 0; i < str.length; i++) {
+  //let vowels = ('a', 'e', 'i', 'o', 'u')
+  // let newStr = newStr.push('')
+    if (elem === 'a' || 'i' || 'e' || 'o' || 'u') {
+      return str.filter(elem => {
+
+      })
+      console.log(str.slice(elem))
+    } else {
+      return str[i]
+      //console.log(str)
+    }
+    }
+  }
+}
+console.log(disemvowel(str))
+
 // Uncomment out the next line to test your solution
-// runQ3Tests()
+//  runQ3Tests()
 
 // Question Four:
-// Write a function called secondSmallest that returns the second smallest number in an array
+// Write a function called secondSmallest that returns the second smallest number in an
+// array
 
-// Uncomment out the next line to test your solution
-// runQ4Tests()
+console.log('--------#4---------')
+let smallest = 0
+const secondSmallest = (array, currElem) => {
+ 
+  smallest = 0
+  for (let i = 0; i < array.length; i++) {
+     //smallest = 0
+    if (smallest < currElem) {
+        smallest = currElem
+        //console.log(smallest)
+    } else {
+      currElem[i]
+      console.log(currElem)
+    }
+    
+   }
+   //return secondSmallest()
+//   return secondSmallest()  
+ }
+// console.log(secondSmallest())
+//console.log(smallest)
+// // Uncomment out the next line to test your solution
+ runQ4Tests()
 
 // Question Five:
 // Write a function called getLocations that takes in an array of objects that look like the array below,
@@ -37,22 +103,74 @@ let assert = require('assert')
 // The output should be in the same order as the input
 
 // Sample input:
-// [{location: "Algeria", population: 41}, {location: "Belize", population: 0.4}, {location: "China", population: 1386}, {location: "Denmark", population: 6}]
+// [{location: "Algeria", population: 41}, {location: "Belize", population: 0.4},
+ // {location: "China", population: 1386}, {location: "Denmark", population: 6}]
 
 // Sample output:
 // ["Algeria", "Belize", "China", "Denmark"]
 
+// console.log('-----------#5----------')
+
+let object = [
+  {
+    location: "Algeria",
+     population: 41
+  },
+  {
+    location: "Belize", 
+    population: 0.4
+  },
+  {
+    location: "China", 
+    population: 1386
+  },
+  {
+    location: "Denmark", 
+    population: 6
+}
+]
+let newArr = []
+const getLocations = (location) => {
+
+return location.map((item) => {
+  let newArr = []
+  return item.location
+})
+  
+
+   
+ }
+ 
+
+//console.log()
 // Uncomment out the next line to test your solution
-// runQ5Tests()
+ runQ5Tests()
 
 
 // Question Six:
 
-// Write a function called onlyOddStrings that takes in an array of strings as input and returns an array that only includes strings with an odd number of characters
-// Your function should use a higher-ordered function (e.g map, filter, reduce, every, sort) in its implementation
+// Write a function called onlyOddStrings that takes in an array of strings as input and 
+// returns an array that only includes strings with an odd number of characters
+// Your function should use a higher-ordered function (e.g map, filter, reduce, every, sort) 
+// in its implementation
 
+// console.log('-------#6-------------')
+
+const onlyOddStrings = (elem, newArr) => {
+  let newArr = [" "]
+ if (elem === 'string')
+      return elem
+    
+  } else {
+return arr.filter((elem) => {
+}
+
+  }
+   onlyOddStrings(newArr)
+}
+// console.log(onlyOddStrings(newArr))
 // Uncomment out the next line to test your solution
-// runQ6Tests()
+//runQ6Tests()
 
 
 // Question Seven:
@@ -65,10 +183,32 @@ let assert = require('assert')
 // Example
 // let myDay = Day(80, "sunny")
 // myDay.getDescription() // returns "It is 80 degrees and sunny"
+console.log('--------#7a----------')
+
+class Day { 
+constructor (temperature, weather) { 
+this.temperature = temperature,
+this.weather = weather
+}
+getAllDayDescriptions() 
+let
+
+
 
 //b.
-// Make a function called getAllDayDescriptions that takes in an array of Day objects and returns an array of their descriptions.  Use a higher-ordered function (e.g map, filter, reduce, every, sort) in your implementation.
+// Make a function called getAllDayDescriptions that takes in an array of Day objects and 
+//returns 
+// an array of their descriptions.  Use a higher-ordered function (e.g map, filter, reduce,
+// every, sort) in your implementation.
 // The output should be in the same order as the input
+
+console.log('-------#7b---------') // could not finish 
+ const getAllDayDescriptions = (obj) => {
+return obj.map()
+}
+ }
+
+
 
 // Uncomment out the next line to test your solution
 // runQ7Tests()
